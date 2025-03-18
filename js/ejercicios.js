@@ -68,26 +68,26 @@ function ejercicio5() {
 }
 
 function ejercicio6() {
-    const celsius = 25; // Valor fijo, no se pide al usuario
+    const celsius = 25;
     const fahrenheit = (9 / 5) * celsius + 32;
     document.getElementById('output6').innerText = `${celsius}°C equivale a ${fahrenheit.toFixed(2)}°F`;
 }
 
 function ejercicio7() {
-    const hora24 = 24; // Valor fijo, no se pide al usuario
+    const hora24 = 24; 
     const ampm = hora24 >= 12 ? 'p.m.' : 'a.m.';
     const hora12 = hora24 % 12 === 0 ? 12 : hora24 % 12;
     document.getElementById('output7').innerText = `Hora en formato 24 horas: las ${hora24} horas es igual a ${hora12} ${ampm}`;
 }
 
 function ejercicio8() {
-    const vector = ['uno', 'dos', 'tres', 'cuatro', 'cinco']; // Valores fijos
+    const vector = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
     const invertido = [...vector].reverse();
     document.getElementById('output8').innerText = `Vector original: ${vector.join(', ')}\nVector invertido: ${invertido.join(', ')}`;
 }
 
 function ejercicio9() {
-    const notas = [7.5, 8.0, 6.5, 9.0, 10]; // Notas fijas
+    const notas = [7.5, 8.0, 6.5, 9.0, 10];
     const promedio = notas.reduce((a, b) => a + b, 0) / notas.length;
     const mayor = Math.max(...notas);
     const menor = Math.min(...notas);
